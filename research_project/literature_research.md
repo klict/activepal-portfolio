@@ -1,0 +1,3 @@
+- Made notes on important parts of certain papers
+    - Word edition: [research_project/literature_research/paper_notes.docx](paper_notes.docx)
+    - Markdown edition: [research_project/literature_research/paper_notes.md](paper_notes.md)
