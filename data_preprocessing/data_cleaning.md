@@ -1,4 +1,4 @@
-# Data preparation
+# Data cleaning
 In our case the data was already cleaned by cbs.
 But we did find certain participants didn't have the certain data or it was corrupt.
 
