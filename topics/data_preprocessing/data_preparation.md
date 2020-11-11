@@ -4,15 +4,15 @@
 The descaling data happend in the function ``extract_features_from_correspondent`` while it's retrieving data and creating features from it
 Removed missing values which can cause model fail happens at "Model preperation" phase of the script. 
  
- - [all_steps_activity recognition_v3_analysis.ipynb](evidence/all_steps_activity recognition_v3_analysis.ipynb)
+ - [all_steps_activity recognition_v3_analysis.ipynb](../../evidence/all_steps_activity_recognition_v3_analysis.ipynb)
 
 ## features dataset
 I have created a script that generates features dataset. It cuts raw dataset in time segment and calculates features. 
 This script went through multiple versions.
 
-- [all_steps_activity_recognition.ipynb](evidence/all_steps_activity_recognition.ipynb)
-- [all_steps_activity_recognition_v2_analysis.ipynb](evidence/all_steps_activity_recognition_v2_analysis.ipynb)
-- [all_steps_activity_recognition_v3_analysis.ipynb](evidence/all_steps_activity_recognition_v3_analysis.ipynb)
+- [all_steps_activity_recognition.ipynb](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
+- [all_steps_activity_recognition_v2_analysis.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_v2_analysis.ipynb)
+- [all_steps_activity_recognition_v3_analysis.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_v3_analysis.ipynb)
 
 ### features 
 In the first version of this script i have created a function that calculates peak to peak distance of each axis.
@@ -57,7 +57,17 @@ This piece of code was based on the code made by Matthew.
 
 ````
 
-src: [all_steps_activity_recognition.ipynb](evidence/all_steps_activity_recognition.ipynb)
+src: [all_steps_activity_recognition.ipynb](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
+
+# time segment
+The time segment is about how big of data we need to summerize in features.
+When i say big i mean time range. In the development of model we saw that time segment has quite of influence of the model.
+
+So I created a script that plots cross validation results over a wide time ranges. 
+With model configuration how it was at the time we saw that 9.4 and 13 seconds gives the best result.
+
+evidence: [all_steps_activity_recognition_v3_time_segment.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_v3_time_segment.ipynb)
+
 
 ### balancing
 While analysing the features dataset I had found that it was unbalanced. Certain activities had less data then others.
@@ -83,15 +93,14 @@ def balance_dataset_by_activity(dataset):
     return unbalanced_dataset
 ````
 
-src: [all_steps_activity_recognition.ipynb](evidence/all_steps_activity_recognition.ipynb)
+src: [all_steps_activity_recognition.ipynb](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
 
 ### converted activity string to binary category
 
 This happens in each version of this script.
 
 ````python
-features_dataset[['activity_walking', 'activity_running', 'activity_jumping', 'activity_standing', 'activity_traplopen',
-                  'activity_sitten']] = 0
+features_dataset[activity_columns] = 0
 
 features_dataset.loc[(features_dataset['activiteit'] == 'lopen'), 'activity_walking'] = 1
 features_dataset.loc[(features_dataset['activiteit'] == 'rennen'), 'activity_running'] = 1
@@ -99,10 +108,14 @@ features_dataset.loc[(features_dataset['activiteit'] == 'springen'), 'activity_j
 features_dataset.loc[(features_dataset['activiteit'] == 'staan'), 'activity_standing'] = 1
 features_dataset.loc[(features_dataset['activiteit'] == 'traplopen'), 'activity_traplopen'] = 1
 features_dataset.loc[(features_dataset['activiteit'] == 'zitten'), 'activity_sitten'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'fietsen licht'), 'cycling_light'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'fietsen zwaar'), 'cycling_hard'] = 1
+
 features_dataset.drop('activiteit', axis=1, inplace=True)
+features_dataset.dropna(how='any', inplace=True)
 ````
 
-src: [all_steps_activity_recognition.ipynb](evidence/all_steps_activity_recognition.ipynb)
+src: [all_steps_activity_recognition_final_version.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_final_version.ipynb)
 
 ### replaced NaN data with 0
 Certain columns had data where it had value of NaN. 
@@ -112,4 +125,4 @@ To solve this we replaced it with zero but we later decided to remove these rows
 for column in features_columns[:-1]:
     features_dataset[column].fillna(0, inplace=True)
 ````
-src: [all_steps_activity_recognition.ipynb](evidence/all_steps_activity_recognition.ipynb)
+src: [all_steps_activity_recognition.ipynb](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)

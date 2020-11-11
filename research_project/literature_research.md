@@ -1,3 +1,0 @@
-- Made notes on important parts of certain papers
-    - Word edition: [paper_notes.docx](evidence/paper_notes.docx)
-    - Markdown edition: [paper_notes.md](evidence/paper_notes.md)

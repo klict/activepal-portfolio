@@ -13,8 +13,8 @@ Cases:
 The issues came up while developing models, so we excluded them from developing dataset.
 
 Scripts:  
- - [all_steps_activity recognition_v3_analysis.ipynb](evidence/all_steps_activity recognition_v3_analysis.ipynb)
- - [intensity_classification_model.ipynb](evidence/intensity_classification_model.ipynb)  
+ - [all_steps_activity recognition_v3_analysis.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_v3_analysis.ipynb)
+ - [intensity_classification_model.ipynb](../../evidence/python_notebook/intensity_classification_model.ipynb)  
 
 # Created functions that is used to convert data
 
@@ -40,7 +40,7 @@ def convert_value_to_g(value):
     return (value - 127) / 63
 ````
 
-evidence: [math_helper.py](evidence/math_helper.py)
+evidence: [math_helper.py](../../evidence/python_script/math_helper.py)
 
 The functions are used by multiple different scripts to prepare the data for models:
 Example: [all_steps_activity recognition_v3_analysis.ipynb](evidence/all_steps_activity recognition_v3_analysis.ipynb)

@@ -1,0 +1,3 @@
+- Made notes on important parts of certain papers
+    - Word edition: [paper_notes.docx](../../evidence/documents/paper_notes.docx)
+    - Markdown edition: [paper_notes.md](../../evidence/documents/paper_notes.md)
