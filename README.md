@@ -12,19 +12,19 @@ studentnummer: 17005116
 - [Conclusions](topics/research_project/conclusions.md)
 - [Planning](topics/research_project/planning.md)
 
-#Domain knowledge
+# Domain knowledge
 - [Introduction of the subject field](topics/domain_knowledge/introduction_of_the_subject_field.md)
 - [literature research](topics/domain_knowledge/literature_research.md)    
 - [Explanation of Terminology, jargon and definitions](topics/domain_knowledge/explanation_of_terminology_jargon_and_definitions.md)
 
-#Data preprocessing
+# Data preprocessing
 - [Data exploration](topics/data_preprocessing/data_exploration.md)
 - [Data cleaning](topics/data_preprocessing/data_cleaning.md)
 - [Data preparation](topics/data_preprocessing/data_preparation.md)
 - [Data explanation](topics/data_preprocessing/data_explanation.md)
 - [Data visualization](topics/data_preprocessing/data_visualization.md)
 
-#Predictive Analytics
+# Predictive Analytics
 - [selecting a model](topics/predictive_analytics/selecting_a_model.md)
 - [training model](topics/predictive_analytics/training_model.md)
 - [evaluating a model](topics/predictive_analytics/evaluating_a_model.md)
