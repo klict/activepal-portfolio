@@ -31,7 +31,7 @@ Examples:
 - Sitting: [sitting_bmr002.png](../../evidence/images/sitting_bmr002.png)
 
 # Helped in development of script to look into data and looked into it
-I developed a small script that visualizes an activity for multiple users in one plot. 
+I developed together with Matthew a small script that visualizes an activity for multiple users in one plot. 
 This script was developed to help Matthew to find outliers and inconstancy in our dataset. 
 
 ````python
