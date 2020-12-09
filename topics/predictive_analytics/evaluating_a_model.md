@@ -63,5 +63,3 @@ Accuracy, precision and recall scores of test and validation dataset:
 From this we can see clearly that we do lose 10% of accuracy, precision and recall but it does generalize. We can say from these result that the model can predict activity with 79% accuracy.
 
 src: [all_steps_activity_recognition_final_version.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_final_version.ipynb)
-
-

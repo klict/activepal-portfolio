@@ -3,7 +3,7 @@
 The model i selected for activity recognition was based on literature research and experiments.
 Chapter of the paper [detection of type, duration and intensity of physical activity using an accelerometer](../../evidence/documents/physical_activity_recognition.pdf) convinced me to use decision tree model.
 The result we got from it were quit good but it was prone to over-fitting and I wanted to try other models. The next model I tried was Random forest model.
-The reason for it because the experiment gave much better result and articles I read explained how it worked and what advantages it brought with. For example it was less prone to be biased than disicion tree because of it working.
+I chose to try this model next because it was less prone to be biased, it was clear how to it worked and it was clear.
 
 We looked at accuracy, precision and recall and concluded that Random forest would be better model to work further with.
 
@@ -14,9 +14,9 @@ We looked at accuracy, precision and recall and concluded that Random forest wou
 
 Evidence: [all_steps_activity_recognition.ipyn](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
 
-These results are great of course but this causes by balancing dataset. 
+These results are great of course but this was caused by balancing dataset. 
 At the time we didn't know this nor did we feel weird about it. 
-In the second version  we have disabled the script balances dataset to give more realistic result.
+In the second version we have disabled the script balances dataset to give more realistic result.
 
 
 

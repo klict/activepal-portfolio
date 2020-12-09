@@ -58,7 +58,6 @@ Best amount of trees i got was `287`.
 
 src: [all_steps_activity_recognition_v3_analysis.ipynb](../../evidence/python_notebook/all_steps_activity_recognition_v3_analysis.ipynb)
 
-## Intensity Classification
+In the last version of activity recognition model the amount of trees we used was `197`. I used the same teqnique as in the notebook above.
 
-src: [intensity_classification.ipynb](../../evidence/python_notebookintensity_classification.ipynb)
 

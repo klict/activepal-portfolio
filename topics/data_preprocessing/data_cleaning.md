@@ -25,15 +25,9 @@ def convert_to_acceleration(row):
     return math.sqrt(row['pal_accX'] ** 2 + row['pal_accY'] ** 2 + row['pal_accZ'] ** 2)
 ````
 
-Created a function to calculate MET-value from oxygen intake and weight
 
-```` python
-def calculate_met(vo2, kg):
-    return vo2 / (3.5 * kg)
-````
-
-Created a function that descales g-force. Activpal record data inunsigned integers to maximaze recodable data. 
-We need to convert this data to G-force which we understand and can use.
+Created a function that descales value from activpal to G-force. Activpal inherintly records data in unsigned format to be able record huge amount of data.
+So we need to descale this to get actually usable data.
 
 ```` python
 def convert_value_to_g(value):
