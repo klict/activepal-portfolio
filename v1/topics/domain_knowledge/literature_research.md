@@ -1,0 +1,2 @@
+- Made notes on important parts of certain papers
+    - [paper_notes.pdf](../../evidence/documents/paper_notes.pdf)
