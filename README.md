@@ -72,21 +72,76 @@ studentnummer: 17005116
 </details>
 
 ### Data preprocessing
-- [Data exploration](topics/data_preprocessing/data_exploration.md)
-- [Data cleaning](topics/data_preprocessing/data_cleaning.md)
-- [Data preparation](topics/data_preprocessing/data_preparation.md)
-- [Data visualization](topics/data_preprocessing/data_visualization.md)
+<details> <summary>Data exploration</summary>
+
+[More Examples](topics/data_preprocessing/data_exploration.md)
+
+</details>
+
+<details> <summary>Data cleaning</summary>
+
+[More Examples](topics/data_preprocessing/data_cleaning.md)
+
+</details>
+
+<details> <summary>Data preparation</summary>
+
+[More Examples](topics/data_preprocessing/data_preparation.md)
+
+</details>
+
+<details> <summary>Data visualization</summary>
+
+[More Examples](topics/data_preprocessing/data_visualization.md)
+
+</details>
+
 
 ### Predictive Analytics
-- [selecting a model](topics/predictive_analytics/selecting_a_model.md)
-- [training model](topics/predictive_analytics/training_model.md)
-- [evaluating a model](topics/predictive_analytics/evaluating_a_model.md)
-- [Visualizing the outcome of a model](topics/predictive_analytics/visualizing_the_outcome_of_a_model.md)
-- [configuring a model](topics/predictive_analytics/configuring_a_model.md)
+
+<details> <summary>selecting a model</summary>
+
+[More Examples](topics/data_preprocessing/selecting_a_model.md)
+
+</details>
+
+<details> <summary>training model</summary>
+
+[More Examples](topics/data_preprocessing/training_model.md)
+
+</details>
+
+<details> <summary>evaluating a model</summary>
+
+[More Examples](topics/data_preprocessing/evaluating_a_model.md)
+
+</details>
+
+<details> <summary>Visualizing the outcome of a model</summary>
+
+[More Examples](topics/data_preprocessing/visualizing_the_outcome_of_a_model.md)
+
+</details>
+
+<details> <summary>configuring a model</summary>
+
+[More Examples](topics/data_preprocessing/configuring_a_model.md)
+
+</details>
 
 ### communication
-- [presentation](topics/communication/presentation.md)
-- [writing paper](topics/communication/writing_paper.md)
+
+<details> <summary>presentation</summary>
+
+[More Examples](topics/data_preprocessing/presentation.md)
+
+</details>
+
+<details> <summary>writing paper</summary>
+
+[More Examples](topics/data_preprocessing/writing_paper.md)
+
+</details>
 
 
 
