@@ -27,33 +27,49 @@ studentnummer: 17005116
  | Cleaning data in Python |[proof](evidence/datacamp/cleaning_data_in_python.pdf)|
  | Preprocessing for Machine Learning in Python |[proof](evidence/datacamp/preprocessing_for_machine_learning_in_python.pdf)|
 
-## Topics
-<details><summary>CLICK ME</summary>
-<p>
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
-
 ### Research project
-<details> 
-<summary>Task definition</summary>
-<p> [More Examples](topics/research_project/task_definition.md)</p>
+<details> <summary>Task Definition</summary>
+
+[More Examples](topics/research_project/task_definition.md)
+
 </details>
 
+<details> <summary>Evaluation</summary>
 
-- [Task definition](topics/research_project/task_definition.md)
-- [Evaluation](topics/research_project/evaluation.md)
-- [Conclusions](topics/research_project/conclusions.md)
-- [Planning](topics/research_project/planning.md)
+[More Examples](topics/research_project/evaluation.md)
+
+</details>
+
+<details> <summary>Conclusions</summary>
+
+[More Examples](topics/research_project/conclusions.md)
+
+</details>
+
+<details> <summary>Planning</summary>
+
+[More Examples](topics/research_project/planning.md)
+
+</details>
 
 ### Domain knowledge
-- [Introduction of the subject field](topics/domain_knowledge/introduction_of_the_subject_field.md)
-- [literature research](topics/domain_knowledge/literature_research.md)    
-- [Explanation of Terminology, jargon and definitions](topics/domain_knowledge/explanation_of_terminology_jargon_and_definitions.md)
+<details> <summary>Introduction of the subject field</summary>
+
+[More Examples](topics/domain_knowledge/introduction_of_the_subject_field.md)
+
+</details>
+
+<details> <summary>literature Research</summary>
+
+[More Examples](topics/research_project/literature_research.md)
+
+</details>
+
+<details> <summary>Explanation of Terminology, jargon and definitions</summary>
+
+[More Examples](topics/research_project/explanation_of_terminology_jargon_and_definitions.md)
+
+</details>
 
 ### Data preprocessing
 - [Data exploration](topics/data_preprocessing/data_exploration.md)
