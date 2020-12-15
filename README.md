@@ -30,8 +30,9 @@ studentnummer: 17005116
 ### Research project
 <details> <summary>Task Definition</summary>
 
-In the research plan I have written the second iteration of the problem domain. 
-There I have processed the feedback we got from on of our teachers. The feedback was that not all problems were defined and goal was not clear.
+In the research plan I have written the second iteration of the problem domain/context while my teammates have worden on other parts. 
+Where they have defined the research question among others. In the second iteration I have processed the feedback we got
+from one of our teachers. 
 
 
 ``
