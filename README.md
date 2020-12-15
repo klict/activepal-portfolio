@@ -34,7 +34,6 @@ In the research plan I have written the second iteration of the problem domain/c
 Where they have defined the research question among others. In the second iteration I have processed the feedback we got
 from one of our teachers. 
 
-
 ``
 Statistics Netherlands (CBS) has the wish to see if their respondents are moving for at least 150
 minutes per week in moderately intense physical activity.
@@ -68,7 +67,18 @@ src: [research_plan.pdf](evidence/documents/research_plan.pdf)
 
 <details> <summary>Planning</summary>
 
-[More Examples](topics/research_project/planning.md)
+In our project the planning was done as group and not individually. That's why it's difficult to explain this as individual part.
+
+At the beginning of our project we have decided that we will use Jira as our scrum board and will implement Scrum in our way and won't follow it to the detail.
+Our group was based on trust that's also the reason why we didn't setup nor sign a contract for teamwork. 
+
+Our process looked as following. At the start of each sprint we decided what goal is for the sprint. With this goal in mind we created task which each team member could choose and take it on themself.
+The task can be modified, removed or created while the sprint were going onbut that was always first discussed within the group before any modification.
+Each morning at 9:30 our group was holding a stand-up. There we discussed what we did day earlier, going to do today and if we are stuck with something.
+At the end of each sprint our group was holding retrospective where we discussed our progress and teamwork last sprint. The role of scrum master was taken on by Ali Safdari.  
+
+
+[In depth](topics/research_project/planning.md)
 
 </details>
 
