@@ -30,7 +30,26 @@ studentnummer: 17005116
 ### Research project
 <details> <summary>Task Definition</summary>
 
-[More Examples](topics/research_project/task_definition.md)
+In the research plan I have written the second iteration of the problem domain. 
+There I have processed the feedback we got from on of our teachers. The feedback was that not all problems were defined and goal was not clear.
+
+
+``
+Statistics Netherlands (CBS) has the wish to see if their respondents are moving for at least 150
+minutes per week in moderately intense physical activity.
+Currently, they are measuring by asking their respondent or health surveys. The issue with this is
+that people are not very good at estimating the time they spent on moving and sport. This of course
+causes that they don't have very reliable data to work with. Therefor CBS has been looking into
+alternatives like the ActivPal accelerometer in combination with machine learning to give better and
+more accurate results when measuring the intensity of certain activities.
+Because of this the CBS started to collect lab tests and started to measure the movements of 41
+correspondents in their regular workweek by using the Activepal Accelerator. It's our job to analyse,
+structure and build machine learning algorithms based on the collected data to see if we can
+determine if people adhere to (inter)national norm for physical activities and if we could measure
+the intensity of movement (without the heart rate information).
+``
+
+src: [research_plan.pdf](evidence/documents/research_plan.pdf)
 
 </details>
 
