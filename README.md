@@ -109,12 +109,16 @@ join retrospective and give my input. I would say what we did well, what didn't 
 
 ### Data preprocessing
 <details> <summary>Data exploration</summary>
+In the beginning of the project we did all kind of exploration of data.
+
 
 [More Examples](topics/data_preprocessing/data_exploration.md)
 
 </details>
 
 <details> <summary>Data cleaning</summary>
+
+
 
 [More Examples](topics/data_preprocessing/data_cleaning.md)
 
@@ -127,6 +131,16 @@ join retrospective and give my input. I would say what we did well, what didn't 
 </details>
 
 <details> <summary>Data visualization</summary>
+To get an idea what kind of features we could use other than what the paper “” suggest I did some research into our data. 
+I made a line plot for each activity for different respondents.  The image below shows clearly that each activity has 
+a unique pattern. So with this information I concluded that we may not need peak-to-peak feature and just could use 
+standard deviation and mean of each axis. The paper suggested different  features but at the end we only used  the 
+suggested feature mean and standard deviation of the X-axis and dropped peak-to-peak feature. The scale of Y-axis at 
+the time of decision didn’t really matter much because the pattern would still be the same. 
+We did still descale it back gravitional acceleration at the end.  
+
+![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
+
 
 [More Examples](topics/data_preprocessing/data_visualization.md)
 
