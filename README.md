@@ -109,7 +109,12 @@ join retrospective and give my input. I would say what we did well, what didn't 
 
 ### Data preprocessing
 <details> <summary>Data exploration</summary>
-In the beginning of the project we did all kind of exploration of data.
+
+While working on the Activity Recognion model I have explored data in certain way. 
+I tried to get an idea if there was a pattern in my dataset. If i say pattern i mean that the acceleration
+data looks in a certain way for activity. The image below does show it quite clearly that each activity has hiw own pattern.
+
+![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
 
 
 [More Examples](topics/data_preprocessing/data_exploration.md)
@@ -118,6 +123,29 @@ In the beginning of the project we did all kind of exploration of data.
 
 <details> <summary>Data cleaning</summary>
 
+Our dataset was provided by CBS in cleaned state. This means they already cleaned it for us and that there wasn’t much 
+for us to do.. While I say this we did find certain issues while working on our models. My teammates  found out that 
+following respondents data were not there or corrupt:
+
+Cases:
+-	BMR060 didn't have vyntus.csv file. This file contains oxygen intake which is need for calculating MET-value.
+-	BMR025 activities that are logged doesn't show up in the data
+-	BMR035 activities that are logged doesn't show up in the data
+-	BMR100 activities that are logged doesn't show up in the data
+-	BMR051 activities that are logged doesn't show up in the data
+-	BMR027 activities that are logged doesn't show up in the data
+
+Other than this we finally found thanks to the help of a teacher what actually the acceleration data means.  
+He explained to us that it was scaled so that ActivPal device could keep much more records than it originally could. 
+He gave us a formula that would convert scaled value back to  Gravitational acceleration. I have implemented this 
+formula in Python as shown as below:
+
+```` python
+def convert_value_to_g(value):
+    return (value - 127) / 63
+````
+
+evidence: [math_helper.py](evidence/python_script/math_helper.py)
 
 
 [More Examples](topics/data_preprocessing/data_cleaning.md)
@@ -125,6 +153,13 @@ In the beginning of the project we did all kind of exploration of data.
 </details>
 
 <details> <summary>Data preparation</summary>
+
+I have created a function that does the whole data preprocessing for a respondent.
+
+
+
+
+
 
 [More Examples](topics/data_preprocessing/data_preparation.md)
 
