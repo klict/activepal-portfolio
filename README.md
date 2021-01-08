@@ -154,7 +154,115 @@ evidence: [math_helper.py](evidence/python_script/math_helper.py)
 
 <details> <summary>Data preparation</summary>
 
-I have created a function that does the whole data preprocessing for a respondent.
+I have developed almost all of the data preparation code for Activity Recognition model. First I have developed a 
+function that extracts features from accelerometer dataset of an respondent. In this function we are creating new features which summerizes a certain time range.
+I specificaly created the features standard deviation and mean of Y and Z axis. Mathew worked on the features mean and standard deviation of the X axis. I have also created peace of code that calculates
+peak-to-peak distance but I have removed in favor better features. By removing I saw improvement at the time. At the end I am also removing any rows that has null values.
+
+````python
+def extract_features_from_correspondent(correspondent):
+    features_df = pd.DataFrame(columns=features_columns, index=pd.to_datetime([]))
+
+    # Getting dataset for a correspodent
+    activities_df = read_functions.read_activities(correspondent)
+        
+    for activity_name in activities:
+        activity = activities_df.loc[activity_name]
+        if not activity.empty:
+            start_time = activity.start
+            stop_time = activity.stop
+            activpal_df = activpal.read_data(correspondent, start_time, stop_time)
+
+            # denormalizing dataset
+            activpal_df['x'] = math_helper.convert_value_to_g(activpal_df['pal_accX'])
+            activpal_df['y'] = math_helper.convert_value_to_g(activpal_df['pal_accY'])
+            activpal_df['z'] = math_helper.convert_value_to_g(activpal_df['pal_accZ'])
+
+            date_range = pd.date_range(start_time, stop_time, freq=str(segment_size) + 'S')
+            
+            for time in date_range:
+                segment_time = time + pd.DateOffset(seconds=segment_size)
+                activpal_segment = activpal_df[(activpal_df.index >= time) & (activpal_df.index < segment_time)]
+
+                stdev_x =  statistics.stdev(activpal_segment['x']) if len(activpal_segment['x']) >= 2 else 0
+                mean_x = activpal_segment['x'].mean()
+
+                stdev_y =  statistics.stdev(activpal_segment['y']) if len(activpal_segment['y']) >= 2 else 0
+                mean_y = activpal_segment['y'].mean()
+
+                stdev_z =  statistics.stdev(activpal_segment['z']) if len(activpal_segment['z']) >= 2 else 0
+                mean_z = activpal_segment['z'].mean()  
+
+
+                features_df.loc[segment_time] = [stdev_x, mean_x, stdev_y, mean_y, stdev_z, mean_z, activity_name]
+
+    features_df.dropna(how='any', inplace=True)
+
+    return features_df
+````
+
+I have also developed functions that makes it easier to create one dataset where all features dataset from respondents merged.
+
+````python
+def extract_features_from_correspondents(correspodents):
+    all_features_df = pd.DataFrame(index=pd.to_datetime([]))
+
+    for correspodent in correspodents:
+        print("Extracting " + correspodent)
+        
+        features_df     = extract_features_from_correspondent(correspodent)
+        all_features_df = pd.concat([all_features_df, features_df])
+    
+    print("Done extracting features")
+
+    return all_features_df
+
+def extract_features_from_all_correspondents(exclude_test_correspodent = True):
+    
+    exclude_directory = ['output', 'throughput', 'Test data','.ipynb_checkpoints']
+    exclude_respodents = ['BMR015','BMR025','BMR027', 'BMR035', 'BMR051', 'BMR054', 'BMR060', 'BMR099', 'BMR100']
+    
+    exclude = exclude_respodents + exclude_directory
+    
+    if (exclude_test_correspodent):
+        exclude = exclude + test_users
+    
+    correspodents = []
+    
+    for directory in os.walk('../../data'):
+        if directory[0] == '../../data':
+            correspodents = directory[1]
+            
+    for exclude_item in exclude:
+        if exclude_item in correspodents:
+            correspodents.remove(exclude_item)
+        
+    return extract_features_from_correspondents(correspodents)
+```` 
+
+As last I have written a peace of code that converts activity labels to numbers so that the model can use it.
+
+````python
+features_dataset[activity_columns] = 0
+
+#features_dataset.loc[(features_dataset['activiteit'] == 'springen'), 'activity_jumping'] = 1
+#features_dataset.loc[(features_dataset['activiteit'] == 'traplopen'), 'activity_traplopen'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'lopen'), 'activity_walking'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'rennen'), 'activity_running'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'staan'), 'activity_standing'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'zitten'), 'activity_sitten'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'fietsen licht'), 'activity_cycling_light'] = 1
+features_dataset.loc[(features_dataset['activiteit'] == 'fietsen zwaar'), 'activity_cycling_heavy'] = 1
+
+features_dataset.drop('activiteit', axis=1, inplace=True)
+````
+
+
+All of the provided code can be found in each of these python notebooks below:
+- [all_steps_activity recognition_final_version_split_cycling_12_1_seconds]()
+- [all_steps_activity recognition_final_version_split_cycling_8_9_seconds]()
+- [all_steps_activity recognition_final_version_split_cycling_7_seconds]()
+ 
 
 
 
