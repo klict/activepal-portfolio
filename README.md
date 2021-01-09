@@ -4,6 +4,20 @@ studentnummer: 17005116
 
 ## Project ActivPal
 
+CBS also known as Statics Netherlands wants to know if their respondents are moving for at least 150 minutes per week in moderately intense physical activity. At this moment CBS is asking their respondents or asking them question about their week.  This form of collecting information is unfortunately not reliable since it relies on the  memory of the respondents.  For this reason CBS has been looking for alternative solutions like a ActivPal Accelerometer. CBS has asked us to research if we can see if  can determine if their respondents did their 150 minutes of moderate activitivity with week data from ActivPAL accelerometer.
+To answer this question we have created following research questions:
+
+
+ 1. **How can Machine Learning be used to predict the intensity of activities performed in a lab situation by a person, who is being monitored with Vyntus One and wearing ActivPal accelerometer?**
+	 - *What measurement does ActivPal use for intensity and why?*
+	 -  *Is it possible to extract this intensity measurement values from just Vyntus One data, if so, how?*
+ 2. **How can Machine Learning be used to predict the intensity of activities performed by a person wearing only the ActivPal accelerometer, based on the data gathered from Vyntus One and ActivPal accelerometer in the lab situation?**
+	 - *What machine learning model can best be used to measure the intensity for each activity?*
+ 3. **How can Machine Learning be used to determine whether people did their 150 minutes of moderate activity in ActivPal accelerometer data of an entire week?**
+	 -  *How can Machine Learning be used to recognize the activities, performed in the lab situation, in the ActivPal accelerometer data?*
+
+
+
 ### Team members
 - Ali
 - Colin
