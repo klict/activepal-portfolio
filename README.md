@@ -296,11 +296,12 @@ In the paper I have written the first version of subchapter subjects of chapter 
 CBS provided us ActivPAL accelerometer dataset, Vytnus dataset and activity log file of each of 31 respondents . They also provided us data from other devices but these were not used in our project. We also got an excel file where they described characteristics of the respondents.  
   
 **Activity log dataset**
+
 This dataset was used  for devloping both MET-regression en activity recognition models. In the case of Activity recognition models it was used to label accelerometer data.
 
 | column | datatype | description| 
 |--|--|--|
- activiteit| text | the name of an activity| 
+|activiteit| text | the name of an activity| 
 | start| text |The date and time when an activity was started  | 
 | stop| text|The date and time when an activity ended | 
 
@@ -314,7 +315,8 @@ Vyntus is an device which analyzes  breathing of a person. The Vyntus dataset co
 | vyn_VO2 | int | rate of oxygen consumption | 
 
 **ActivPAL dataset**  
-  This dataset was both used to develop both MET-regression and activity recognition models
+
+This dataset was both used to develop both MET-regression and activity recognition models
 
 | column | datatype | description|   
 |--|--|--|  
