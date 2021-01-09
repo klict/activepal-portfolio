@@ -289,6 +289,41 @@ We did still descale it back gravitional acceleration at the end.
 
 </details>
 
+<details> <summary>Data explanation</summary>
+
+In the paper I have written the first version of subchapter subjects of chapter data where I describe the characteristics of our subject. Also I have written  subchapter study design of chapter data  where I describe how the data is recorded in the lab.   
+
+CBS provided us ActivPAL accelerometer dataset, Vytnus dataset and activity log file of each of 31 respondents . They also provided us data from other devices but these were not used in our project. We also got an excel file where they described characteristics of the respondents.  
+  
+**Activity log dataset**
+This dataset was used  for devloping both MET-regression en activity recognition models. In the case of Activity recognition models it was used to label accelerometer data.
+
+| column | datatype | description| 
+|--|--|--|
+ activiteit| text | the name of an activity| 
+| start| text |The date and time when an activity was started  | 
+| stop| text|The date and time when an activity ended | 
+
+**Vyntus  dataset**  
+  
+Vyntus is an device which analyzes  breathing of a person. The Vyntus dataset contains allot of features but we only used specifick features in the MET-regression models 
+  
+| column | datatype | description|   
+|--|--|--|  
+|vyn_time| timestamp| The date and time when breathing is analyzed |   
+| vyn_VO2 | int | rate of oxygen consumption | 
+
+**ActivPAL dataset**  
+  This dataset was both used to develop both MET-regression and activity recognition models
+
+| column | datatype | description|   
+|--|--|--|  
+|pal_time| timestamp| The date and time when accelerometer data is recorded |   
+| pal_accX| int | scaled value of gravitational acceleration of the X axis | 
+| pal_accY| int | scaled value of gravitational acceleration of the Y axis | 
+| pal_accZ| int | scaled value of gravitational acceleration of the Z axis | 
+</details>
+
 
 ### Predictive Analytics
 
