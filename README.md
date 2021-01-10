@@ -3,10 +3,14 @@ naam: Adnan Akbas
 studentnummer: 17005116
 
 ## Project ActivPal
+CBS also known as Statics Netherlands wants to know if their respondents are moving for at least 150 minutes per week in
+moderately intense physical activity. At this moment CBS is asking their respondents or asking them question about 
+their week.  This form of collecting information is unfortunately not reliable since it relies on the  memory 
+of the respondents.  For this reason CBS has been looking for alternative solutions like a ActivPal Accelerometer. CBS 
+has asked us to research if we can see if  can determine if their respondents did their 150 minutes of moderate 
+activity with week data from ActivPAL accelerometer.
 
-CBS also known as Statics Netherlands wants to know if their respondents are moving for at least 150 minutes per week in moderately intense physical activity. At this moment CBS is asking their respondents or asking them question about their week.  This form of collecting information is unfortunately not reliable since it relies on the  memory of the respondents.  For this reason CBS has been looking for alternative solutions like a ActivPal Accelerometer. CBS has asked us to research if we can see if  can determine if their respondents did their 150 minutes of moderate activitivity with week data from ActivPAL accelerometer.
 To answer this question we have created following research questions:
-
 
  1. **How can Machine Learning be used to predict the intensity of activities performed in a lab situation by a person, who is being monitored with Vyntus One and wearing ActivPal accelerometer?**
 	 - *What measurement does ActivPal use for intensity and why?*
@@ -345,7 +349,20 @@ This dataset was both used to develop both MET-regression and activity recogniti
 
 <details> <summary>selecting a model</summary>
 
-[More Examples](topics/data_preprocessing/selecting_a_model.md)
+The model I selected for recognizing activity was based on a paper and experiments.  The paper [detection of type, duration and intensity of physical activity using an accelerometer](evidence/documents/physical_activity_recognition.pdf) showed us that they were able to recognize activity with high accuracy on their acceleration dataset.  For this reason  I experimented with decision tree and I saw some great results. After looking into more depth into decision tree and getting some suggestions from teacher I started to experiment with random forest model. The reason for this is that decision trees tend to overfit and with how random forest model work it would less do so.
+
+So I looked at accuracy, precision and recall of random forest and decision tree model on the validation dataset. What I saw was that random forest model gave us the best results on all metrics as you can also see below:
+
+
+Validation results
+|Model | Accuracy | Precision | Recall |  
+|-------|----------|-----------|--------|  
+|Decision tree |0.96|0.96|0.96|  
+|Random forest |0.97|0.98|0.98|  
+  
+Evidence: [all_steps_activity_recognition.ipyn](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
+I do need to tell you that these results were from a validation/training dataset which I balanced it.
+
 
 </details>
 
