@@ -366,7 +366,7 @@ I do need to tell you that these results were from a validation/training dataset
 
 </details>
 
-<details> <summary>training model</summary>
+<details> <summary>configuring a model</summary>
 
 There is allot of hyper parameters to configure in random forest model.  The paper I found uses the random forest model to recognize activties from acceleration data. The hyperparameters configuration in that paper was the same as  default configuration used in RandomForestClassfier from sckit but only **n_estimators** parameter was modified. I couldn't find a reason to modify the rest of hyper parameters.
 
@@ -400,6 +400,48 @@ Running this script for each time segment I quickly found the best time segment 
 
 [More Examples](topics/data_preprocessing/training_model.md)
 
+
+[More Examples](topics/data_preprocessing/configuring_a_model.md)
+
+</details>
+
+
+<details> <summary>training model</summary>
+
+For training purposes I have split my dataset into training and validation dataset. 80% of the dataset is used for training and 20% of the dataset is used for validation. For this I have made use of the function train_test_split from sci-kit learn as seen below.
+
+```python
+x = features_dataset[features_columns[:-1]]
+y = features_dataset[activity_columns]
+
+## split
+x_train, x_valid, y_train, y_valid = train_test_split(x, y, test_size=0.2, random_state=0)
+```
+Checking random forest model on the validation dataset. I found that it didn't underfit at all and it overfitted very little. I have added the results below:
+
+| Time segment size | number_of_trees | accuracy | precision | recall 
+|--|--|--|--|--|--|--|--|  
+| 7.0 | 203 | 0.95| 0.95 | 0.95 |
+|12.1|93|0.96|0.96|0.96| 
+|8.9|171|0.94|0.94|0.94|
+
+These results were quite high and got me a bit suspicious. So i used k-fold cross validation and got a bit more realistic results as you can see below.
+
+|Time segment size |number of trees | accuracy| precision | recall  |  
+|--|--|--|--|--|--|--|--|  
+| 7.0 | 203 | 0.83 (+/- 0.04)| 0.84 (+/- 0.04) |  0.83 (+/- 0.04) |  
+|12.1|93|0.82 (+/- 0.05)| 0.84 (+/- 0.04)|0.82 (+/- 0.05)|  
+|8.9|171|0.82 (+/- 0.04)| 0.84 (+/- 0.04)|0.82 (+/- 0.04)|
+
+So I didn't take any actions to remedy overfitting or underfitting because it wasn't needed. I am quite happy with these results
+
+evidences:
+
+-
+-
+-
+
+
 </details>
 
 <details> <summary>evaluating a model</summary>
@@ -414,11 +456,6 @@ Running this script for each time segment I quickly found the best time segment 
 
 </details>
 
-<details> <summary>configuring a model</summary>
-
-[More Examples](topics/data_preprocessing/configuring_a_model.md)
-
-</details>
 
 ### communication
 <details> <summary>presentation</summary>
