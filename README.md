@@ -368,6 +368,36 @@ I do need to tell you that these results were from a validation/training dataset
 
 <details> <summary>training model</summary>
 
+There is allot of hyper parameters to configure in random forest model.  The paper I found uses the random forest model to recognize activties from acceleration data. The hyperparameters configuration in that paper was the same as  default configuration used in RandomForestClassfier from sckit but only **n_estimators** parameter was modified. I couldn't find a reason to modify the rest of hyper parameters.
+
+So to configure the **n_estimators** which means the number of trees I created a script. It automaticly chooses the amount of trees that gives the highest amount of accuracy on the validation dataset.
+
+```python
+    n_estimator_numbers = range(10,200,1)
+    print(n_estimator_numbers)
+
+    for i in n_estimator_numbers:
+        rfc_t = RandomForestClassifier(n_estimators=i, random_state=0)
+        rfc_t.fit(train_x, train_y)
+
+        predictions = rfc_t.predict(valid_x)
+        accuracy_scores.append(accuracy_score(valid_y, predictions, normalize=True))
+
+    np_accuracy_scores = np.array(accuracy_scores)
+    number_of_trees = np.argmax(np_accuracy_scores)  + 10
+```
+src: [all_steps_activity recognition_final_version_split_cycling_time_segment]()
+
+Running this script for each time segment I quickly found the best time segment size and best amount of trees. In the table below you can find the results sorted on cross_val_accuracy:
+
+| Time segment size | number_of_trees | accuracy | precision | recall | cross_val_accuracy | cross_val_precision | cross_val_recall  |
+|--|--|--|--|--|--|--|--|
+| 7.0 | 203 | 0.952673| 0.953509 | 0.952673 | 0.827059| 0.843252 | 0.827059 |
+|12.1|93|0.968373|0.969834|0.968373|0.822249|0.836513|0.822249|
+|8.9|171|0.962306|0.963374|0.962306|0.817187|0.836683|0.817187|
+|8.4|141|0.954974|0.956978|0.954974|0.817032|0.834617|0.817032|
+|12.0|21|0.949025|0.954751|0.949025|0.816752|0.841591|0.816752|
+
 [More Examples](topics/data_preprocessing/training_model.md)
 
 </details>
