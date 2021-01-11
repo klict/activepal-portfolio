@@ -555,7 +555,3 @@ This gives great insight on how the model performs on real data. Below you can f
 |I have some fixed small issues |4| Subchapter activity recognition of chapter result|[4e iteration of subchapter acitivity recognition of chapter result](evidence/paper_chapters/result_activity_recognition_version_4.pdf)|
 
 </details>
-
-
-
-
