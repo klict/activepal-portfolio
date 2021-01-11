@@ -446,13 +446,68 @@ evidences:
 
 <details> <summary>evaluating a model</summary>
 
-[More Examples](topics/data_preprocessing/evaluating_a_model.md)
+** validation dataset **
+
+| Time segment size | number of trees | accuracy | precision | recall 
+|--|--|--|--|--|--|--|--|  
+| 7.0 | 203 | 0.95| 0.95 | 0.95 |
+|12.1|93|0.96|0.96|0.96| 
+|8.9|171|0.94|0.94|0.94|
+
+** Test dataset **
+
+| Time segment size | number of trees | accuracy | precision | recall 
+|--|--|--|--|--|--|--|--|  
+| 7.0 | 203 | 0.84| 0.84 | 0.84 |
+|12.1|93|0.85|0.85|0.85| 
+|8.9|171|0.86|0.86|0.86|
+
+
+** k-fold cross-validation(5 folds)  on train/validation dataset**
+
+|Time segment size |number of trees | accuracy| precision | recall  |  
+|--|--|--|--|--|--|--|--|  
+| 7.0 | 203 | 0.83 (+/- 0.04)| 0.84 (+/- 0.04) |  0.83 (+/- 0.04) |  
+|12.1|93|0.82 (+/- 0.05)| 0.84 (+/- 0.04)|0.82 (+/- 0.05)|  
+|8.9|171|0.82 (+/- 0.04)| 0.84 (+/- 0.04)|0.82 (+/- 0.04)|
+
+src:
+
+- 
+- 
+- 
+
+
+Looking at these result i can conclude that my model does it job quite well.
+
 
 </details>
 
 <details> <summary>Visualizing the outcome of a model</summary>
 
-[More Examples](topics/data_preprocessing/visualizing_the_outcome_of_a_model.md)
+##### confusion matrix
+ 
+I have created multiple confusion matrix of the model prediction on validation and test datasets. 
+With this i could see clearly where the model has difficulty. I have added example below where you can see clearly that 
+my model has allot of difficulty with light and heavy cycling.
+
+Confusion matrix on test dataset with segment size of 7 seconds
+
+![Confusion matrix on test dataset](evidence/images/confusion_matrix_test.png)
+
+#### plotting weekdata
+
+I have worked together with Ali on application to analyze weekdata. I have developed the part which actually plots weekdata analyzes results.
+This gives great insight on how the model performs on real data. Below you can find example on day worth of accelerometer data.
+
+![Plot on day data](evidence/images/plot_day%20of_week_data.png)
+
+
+
+
+
+
+
 
 </details>
 
