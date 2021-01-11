@@ -448,16 +448,16 @@ evidences:
 
 ** validation dataset **
 
-| Time segment size | number of trees | accuracy | precision | recall 
-|--|--|--|--|--|--|--|--|  
+| Time segment size | number of trees | accuracy | precision | recall |
+|--|--|--|--|--|
 | 7.0 | 203 | 0.95| 0.95 | 0.95 |
 |12.1|93|0.96|0.96|0.96| 
 |8.9|171|0.94|0.94|0.94|
 
 ** Test dataset **
 
-| Time segment size | number of trees | accuracy | precision | recall 
-|--|--|--|--|--|--|--|--|  
+| Time segment size | number of trees | accuracy | precision | recall |
+|--|--|--|--|--|
 | 7.0 | 203 | 0.84| 0.84 | 0.84 |
 |12.1|93|0.85|0.85|0.85| 
 |8.9|171|0.86|0.86|0.86|
@@ -466,7 +466,7 @@ evidences:
 ** k-fold cross-validation(5 folds)  on train/validation dataset**
 
 |Time segment size |number of trees | accuracy| precision | recall  |  
-|--|--|--|--|--|--|--|--|  
+|--|--|--|--|--|
 | 7.0 | 203 | 0.83 (+/- 0.04)| 0.84 (+/- 0.04) |  0.83 (+/- 0.04) |  
 |12.1|93|0.82 (+/- 0.05)| 0.84 (+/- 0.04)|0.82 (+/- 0.05)|  
 |8.9|171|0.82 (+/- 0.04)| 0.84 (+/- 0.04)|0.82 (+/- 0.04)|
