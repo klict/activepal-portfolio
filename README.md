@@ -24,9 +24,53 @@ To answer this question we have created following research questions:
 
 ### Team members
 - Ali
-- Colin
+- [Colin](https://github.com/colinrw/ActivPal-Portfolio)
 - Mark
 - Matthew
+
+## Reflection
+
+<details> <summary>Reflection on own contribution to the project.</summary>
+
+**situation**
+
+**task**
+
+**action**
+
+**result**
+
+**reflection**
+
+</details>
+
+<details> <summary>Reflection on own learning objectives.</summary>
+
+**situation**
+
+**task**
+
+**action**
+
+**result**
+
+**reflection**
+
+</details>
+
+<details> <summary>Evaluation on the group project as a whole.</summary>
+
+**situation**
+
+**task**
+
+**action**
+
+**result**
+
+**reflection**
+
+</details>
 
 
 ## Datacamp
@@ -45,12 +89,13 @@ To answer this question we have created following research questions:
  | Cleaning data in Python |[proof](evidence/datacamp/cleaning_data_in_python.pdf)|
  | Preprocessing for Machine Learning in Python |[proof](evidence/datacamp/preprocessing_for_machine_learning_in_python.pdf)|
 
+
 ### Research project
 <details> <summary>Task Definition</summary>
 
-In the research plan I have written the second iteration of the problem domain/context while my teammates have worden on other parts. 
-Where they have defined the research question among others. In the second iteration I have processed the feedback we got
-from one of our teachers. 
+In the research plan, I have written the second iteration of the problem domain/context while my teammates have worked on other parts. 
+Where they have defined the research question among others. In the second iteration, I have processed the feedback we got from one of our teachers. 
+
 
 ``
 Statistics Netherlands (CBS) has the wish to see if their respondents are moving for at least 150
@@ -71,69 +116,65 @@ src: [research_plan.pdf](evidence/documents/research_plan.pdf)
 
 </details>
 
-<details> <summary>Evaluation</summary>
-
-[More Examples](topics/research_project/evaluation.md)
-
-</details>
-
 <details> <summary>Conclusions</summary>
 
-[More Examples](topics/research_project/conclusions.md)
+Colin and I have written the conclusion in the paper. First, we discussed what the conclusion should be. Then I have
+written the first iteration of the conclusion. Colin has written the second, third and fourth iteration of the conclusion.
+Each iteration we discussed if the written conclusion is right or if it needs to change. 
+
+Conclusion from the paper:
+```
+This research shows that it is possible to use Machine Learning to determine if people did their 150 minutes of moderate
+ activity within a week. The only issue with this determination lies with the reliability and accuracy of the models 
+that make this determination. Recognizing which activity is performed can be predicted with fairly high accuracy, 
+the only issue comes with predicting cycling light and heavy. The acceleration data of these activities is almost 
+identical and therefore harder to differentiate between. The reason why it is not possible to accurately determine 
+if the respondent reached the 150 minutes is because the MET prediction models are overfitting on the training data set.
+ This is caused by not having enough respondent characteristics data for the models to generalize. After analysing the 
+results of the MET models, we concluded that the MET models were not able to accurately predict the MET values. This 
+resulted in not being able to accurately determine if the respondents have done their 150 minutes of moderate intense activity.  
+```
 
 </details>
 
 <details> <summary>Planning</summary>
 
-At the beginning of our project we have decided that we will use Jira as our scrum board and will implement Scrum in our way and won't follow it to the detail.
-Our group was based on trust that's also the reason why we didn't setup nor sign a contract for teamwork. 
+At the beginning of our project, we have decided that we will use Jira as our scrum board, will implement Scrum in our way and won't follow it to the detail.
 
-Our process looked as following. At the start of each sprint we decided what goal is for the sprint. With this goal in mind we created task which each team member could choose and take it on themself.
-The task can be modified, removed or created while the sprint were going onbut that was always first discussed within the group before any modification.
-Each morning at 9:30 our group was holding a stand-up. There we discussed what we did day earlier, going to do today and if we are stuck with something.
-At the end of each sprint our group was holding retrospective where we discussed our progress and teamwork last sprint. The role of scrum master was taken on by Ali Safdari. 
+Our process looked as follows. At the start of each sprint, we decided what the sprint goal is. With a goal in mind, we created tasks which each team member could choose and take it on themself.
+Each task can be modified, removed or created while the sprint was going on but it always after discussing with the group.
+At 9:30 am from Monday to Friday we were holding a stand-up. At the stand-up we discussed what we did a day earlier, going to today and if we are stuck with something.
+We also held retrospectives at the end of each sprint, where we discussed our progress and teamwork.
 
 ## My role in scrum
-I didn't have specific role in the scrum process other than developer but i did actively participate in each phase of 
-the scrum process.At the sprint planning I have actively created task of course after discussing with the team. At the 
-same time I would assign task to myself unless other team members would want them. In some cases we would assign 
-multiple members to a task. Unfortunately Jira doesn't support that so we would write the names in description of the task.
-Each morning I would join stand-up with my other team members and explain what i did yesterday, what i am gonna do today and if i need help.
-Unfortnatly and reasonably we didn't take notes so I don't have evidence for this. At the end of each sprint I would 
-join retrospective and give my input. I would say what we did well, what didn't go well and what i wish next sprint would get better.
+I didn't have a specific role in the scrum process other than a developer but I did actively participate in each phase of the scrum process. At the sprint planning, I have actively created the task after discussing with the team. At the same time, I would assign a task to myself unless other team members would want them. In some cases, we would assign multiple members to a task.  Jira inherently doesn't support assigning multiple members to a task. That's why we would write the names of the assigned members to the tasks.
+Each morning I would join the stand-up with my other team members and explain what I did yesterday, what I am gonna do today and if I need help.  At the end of each sprint, I would join retrospective and give my input. I would say what we did well, what didn't go well and what I wish next sprint would get better.
 
 [More information on our take](topics/research_project/planning.md)
 
 </details>
 
 ### Domain knowledge
-<details> <summary>Introduction of the subject field</summary>
-
-[More Examples](topics/domain_knowledge/introduction_of_the_subject_field.md)
-
-</details>
 
 <details> <summary>literature Research</summary>
 
-[More Examples](topics/research_project/literature_research.md)
+I have found following literature:
+- [Random forest classifier by Tin Kam Ho](evidence/documents/random_forest_classifier_tin_kam_ho.pdf)
+- [An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band](evidence/documents/activity_recognition_framework_deploying_the_random_forest_classififier.pdf)
 
 </details>
 
-<details> <summary>Explanation of Terminology, jargon and definitions</summary>
-
-[More Examples](topics/research_project/explanation_of_terminology_jargon_and_definitions.md)
-
-</details>
 
 ### Data preprocessing
 <details> <summary>Data exploration</summary>
 
-While working on the Activity Recognion model I have explored data in certain way. 
-I tried to get an idea if there was a pattern in my dataset. If i say pattern i mean that the acceleration
-data looks in a certain way for activity. The image below does show it quite clearly that each activity has hiw own pattern.
+I tried to get an idea if there was a pattern in my dataset. If I say pattern I mean that the acceleration data has 
+certain behaviour for an activity. The image below does show it quite clearly that each activity has a unique pattern.
+ The only exception here is that cycling light and heavy looks quite the same.  At the time I excepted that the activity
+  recognition model would have some difficulty to keep them apart.
 
 ![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
-
+[Src of the image](evidence/python_notebook/activity_visualization.pdf)
 
 [More Examples](topics/data_preprocessing/data_exploration.md)
 
@@ -141,41 +182,16 @@ data looks in a certain way for activity. The image below does show it quite cle
 
 <details> <summary>Data cleaning</summary>
 
-Our dataset was provided by CBS in cleaned state. This means they already cleaned it for us and that there wasn’t much 
-for us to do.. While I say this we did find certain issues while working on our models. My teammates  found out that 
-following respondents data were not there or corrupt:
-
-Cases:
--	BMR060 didn't have vyntus.csv file. This file contains oxygen intake which is need for calculating MET-value.
--	BMR025 activities that are logged doesn't show up in the data
--	BMR035 activities that are logged doesn't show up in the data
--	BMR100 activities that are logged doesn't show up in the data
--	BMR051 activities that are logged doesn't show up in the data
--	BMR027 activities that are logged doesn't show up in the data
-
-Other than this we finally found thanks to the help of a teacher what actually the acceleration data means.  
-He explained to us that it was scaled so that ActivPal device could keep much more records than it originally could. 
-He gave us a formula that would convert scaled value back to  Gravitational acceleration. I have implemented this 
-formula in Python as shown as below:
-
-```` python
-def convert_value_to_g(value):
-    return (value - 127) / 63
-````
-
-evidence: [math_helper.py](evidence/python_script/math_helper.py)
-
-
-[More Examples](topics/data_preprocessing/data_cleaning.md)
+Our dataset was provided by CBS in cleaned state, so there was not much cleaning to do.
 
 </details>
 
 <details> <summary>Data preparation</summary>
 
 I have developed almost all of the data preparation code for Activity Recognition model. First I have developed a 
-function that extracts features from accelerometer dataset of an respondent. In this function we are creating new features which summerizes a certain time range.
-I specificaly created the features standard deviation and mean of Y and Z axis. Mathew worked on the features mean and standard deviation of the X axis. I have also created peace of code that calculates
-peak-to-peak distance but I have removed in favor better features. By removing I saw improvement at the time. At the end I am also removing any rows that has null values.
+function that extracts features from accelerometer dataset of a respondent. In this function, we are creating new features which summarize a certain time range.
+I specifically created the features standard deviation and mean of Y and Z-axis. Mathew worked on the features mean and standard deviation of the X-axis. I just copied the Mathew code and modified for my use. 
+In the end, I am also removing any rows that have any null values.
 
 ````python
 def extract_features_from_correspondent(correspondent):
@@ -219,7 +235,7 @@ def extract_features_from_correspondent(correspondent):
     return features_df
 ````
 
-I have also developed functions that makes it easier to create one dataset where all features dataset from respondents merged.
+I have also developed a function that makes it easier to create one dataset where all features dataset from respondents merged.
 
 ````python
 def extract_features_from_correspondents(correspodents):
@@ -258,7 +274,7 @@ def extract_features_from_all_correspondents(exclude_test_correspodent = True):
     return extract_features_from_correspondents(correspodents)
 ```` 
 
-As last I have written a peace of code that converts activity labels to numbers so that the model can use it.
+Next, I am converting activity labels to binary categories so that model can use them.
 
 ````python
 features_dataset[activity_columns] = 0
@@ -277,45 +293,33 @@ features_dataset.drop('activiteit', axis=1, inplace=True)
 
 
 All of the provided code can be found in each of these python notebooks below:
-- [all_steps_activity recognition_final_version_split_cycling_12_1_seconds]()
-- [all_steps_activity recognition_final_version_split_cycling_8_9_seconds]()
-- [all_steps_activity recognition_final_version_split_cycling_7_seconds]()
+- [all_steps_activity recognition_final_version_split_cycling_12_1_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_12_1_seconds.pdf)
+- [all_steps_activity recognition_final_version_split_cycling_8_9_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_8_9_seconds.pdf)
+- [all_steps_activity recognition_final_version_split_cycling_7_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_7_seconds.pdf)
  
-
-
-
-
-
-
 [More Examples](topics/data_preprocessing/data_preparation.md)
 
 </details>
 
 <details> <summary>Data visualization</summary>
-To get an idea what kind of features we could use other than what the paper “” suggest I did some research into our data. 
-I made a line plot for each activity for different respondents.  The image below shows clearly that each activity has 
-a unique pattern. So with this information I concluded that we may not need peak-to-peak feature and just could use 
-standard deviation and mean of each axis. The paper suggested different  features but at the end we only used  the 
-suggested feature mean and standard deviation of the X-axis and dropped peak-to-peak feature. The scale of Y-axis at 
-the time of decision didn’t really matter much because the pattern would still be the same. 
-We did still descale it back gravitional acceleration at the end.  
+To get an idea what kind of features we could use I did some research into our data.
+I made a line plot for each activity for different respondents.  The image below shows clearly that each activity has a unique pattern. So with this information, I concluded that we could use standard deviation and mean of each axis as features. 
 
 ![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
-
-
-[More Examples](topics/data_preprocessing/data_visualization.md)
-
+[Src of the image](evidence/python_notebook/activity_visualization.pdf)
 </details>
 
 <details> <summary>Data explanation</summary>
 
-In the paper I have written the first version of subchapter subjects of chapter data where I describe the characteristics of our subject. Also I have written  subchapter study design of chapter data  where I describe how the data is recorded in the lab.   
+I have written the first version of the subject "subjects" of the chapter "data" where I described the characteristics of our subject.
+I have also written the first version of the subchapter "study design" of the chapter "data".
 
-CBS provided us ActivPAL accelerometer dataset, Vytnus dataset and activity log file of each of 31 respondents . They also provided us data from other devices but these were not used in our project. We also got an excel file where they described characteristics of the respondents.  
+
+CBS provided us ActivPAL accelerometer dataset, Vytnus dataset and activity log file of each of 31 respondents. They also provided us data from other devices but these were not used in our project. We also got an excel file where they described the characteristics of the respondents.  
   
 **Activity log dataset**
 
-This dataset was used  for devloping both MET-regression en activity recognition models. In the case of Activity recognition models it was used to label accelerometer data.
+This dataset was used for developing both MET-regression en activity recognition models. In the case of Activity recognition models, it was used to label accelerometer data.
 
 | column | datatype | description | 
 |--------|----------|-------------|
@@ -323,16 +327,16 @@ This dataset was used  for devloping both MET-regression en activity recognition
 | start| text |The date and time when an activity was started  | 
 | stop| text|The date and time when an activity ended | 
 
-**Vyntus  dataset**  
+**Vyntus  dataset** 
   
-Vyntus is an device which analyzes  breathing of a person. The Vyntus dataset contains allot of features but we only used specifick features in the MET-regression models 
+Vyntus is a device which analyzes the breathing of a person. The Vyntus dataset contains a lot of features but we only used specific features in the MET-regression models 
   
 | column | datatype | description|   
 |--------|----------|------------|  
 |vyn_time| timestamp| The date and time when breathing is analyzed |   
 | vyn_VO2 | int | rate of oxygen consumption | 
 
-**ActivPAL dataset**  
+**ActivPAL dataset** 
 
 This dataset was both used to develop both MET-regression and activity recognition models
 
@@ -355,7 +359,7 @@ The model I selected for recognizing activity was based on a paper and experimen
 So I looked at accuracy, precision and recall of random forest and decision tree model on the validation dataset. What I saw was that random forest model gave us the best results on all metrics as you can also see below:
 
 
-** Validation results **
+**Validation results**
 
 | Model | Accuracy | Precision | Recall |  
 |-------|----------|-----------|--------|  
@@ -370,9 +374,10 @@ I do need to tell you that these results were from a validation/training dataset
 
 <details> <summary>configuring a model</summary>
 
-There is allot of hyper parameters to configure in random forest model.  The paper I found uses the random forest model to recognize activties from acceleration data. The hyperparameters configuration in that paper was the same as  default configuration used in RandomForestClassfier from sckit but only **n_estimators** parameter was modified. I couldn't find a reason to modify the rest of hyper parameters.
+There is allot of hyperparameters to configure in random forest model.  The paper  [An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band](evidence/documents/activity_recognition_framework_deploying_the_random_forest_classififier.pdf)
+ also uses the random forest model to recognize activities from acceleration data. The hyper parameters configuration in that paper was the same as default configuration used in RandomForestClassfier from sckit but only**n_estimators**parameter was modified. I didn't find a reason to modify the rest of the hyper parameters.
 
-So to configure the **n_estimators** which means the number of trees I created a script. It automaticly chooses the amount of trees that gives the highest amount of accuracy on the validation dataset.
+So to configure the**n_estimators**which means the number of trees I created a script. It automatically chooses the number of trees that gives the highest amount of accuracy on the validation dataset.
 
 ```python
     n_estimator_numbers = range(10,200,1)
@@ -388,7 +393,8 @@ So to configure the **n_estimators** which means the number of trees I created a
     np_accuracy_scores = np.array(accuracy_scores)
     number_of_trees = np.argmax(np_accuracy_scores)  + 10
 ```
-src: [all_steps_activity recognition_final_version_split_cycling_time_segment]()
+
+src: [all_steps_activity_recognition_final_version_split_cycling_time_segment](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_time_segment.pdf)
 
 Running this script for each time segment I quickly found the best time segment size and best amount of trees. In the table below you can find the results sorted on cross_val_accuracy:
 
@@ -400,17 +406,12 @@ Running this script for each time segment I quickly found the best time segment 
 |8.4|141|0.954974|0.956978|0.954974|0.817032|0.834617|0.817032|
 |12.0|21|0.949025|0.954751|0.949025|0.816752|0.841591|0.816752|
 
-[More Examples](topics/data_preprocessing/training_model.md)
-
-
-[More Examples](topics/data_preprocessing/configuring_a_model.md)
-
 </details>
 
 
 <details> <summary>training model</summary>
 
-For training purposes I have split my dataset into training and validation dataset. 80% of the dataset is used for training and 20% of the dataset is used for validation. For this I have made use of the function train_test_split from sci-kit learn as seen below.
+For training purposes, I have split my dataset into training and validation dataset. 80% of the dataset is used for training and 20% of the dataset is used for validation. For this, I have made use of the function train_test_split from sci-kit learn as seen below.
 
 ```python
 x = features_dataset[features_columns[:-1]]
@@ -439,16 +440,17 @@ So I didn't take any actions to remedy overfitting or underfitting because it wa
 
 evidences:
 
--
--
--
+- [all_steps_activity recognition_final_version_split_cycling_12_1_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_12_1_seconds.pdf)
+- [all_steps_activity recognition_final_version_split_cycling_8_9_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_8_9_seconds.pdf)
+- [all_steps_activity recognition_final_version_split_cycling_7_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_7_seconds.pdf)
+ 
 
 
 </details>
 
 <details> <summary>evaluating a model</summary>
 
-** validation dataset **
+**validation dataset**
 
 | Time segment size | number of trees | accuracy | precision | recall |
 |-------------------|-----------------|----------|-----------|--------|
@@ -456,7 +458,7 @@ evidences:
 |12.1|93|0.96|0.96|0.96| 
 |8.9|171|0.94|0.94|0.94|
 
-** Test dataset **
+**Test dataset**
 
 | Time segment size | number of trees | accuracy | precision | recall |
 |-------------------|-----------------|----------|-----------|--------|
@@ -465,7 +467,7 @@ evidences:
 |8.9|171|0.86|0.86|0.86|
 
 
-** k-fold cross-validation(5 folds)  on train/validation dataset**
+**k-fold cross-validation(5 folds)  on train/validation dataset**
 
 | Time segment size | number of trees | accuracy | precision | recall  |  
 |-------------------|-----------------|----------|-----------|---------|
@@ -473,15 +475,14 @@ evidences:
 |12.1|93|0.82 (+/- 0.05)| 0.84 (+/- 0.04)|0.82 (+/- 0.05)|  
 |8.9|171|0.82 (+/- 0.04)| 0.84 (+/- 0.04)|0.82 (+/- 0.04)|
 
+
 src:
 
-- 
-- 
-- 
+- [all_steps_activity recognition_final_version_split_cycling_12_1_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_12_1_seconds.pdf)
+- [all_steps_activity recognition_final_version_split_cycling_8_9_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_8_9_seconds.pdf)
+- [all_steps_activity recognition_final_version_split_cycling_7_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_7_seconds.pdf)
 
-
-Looking at these result i can conclude that my model does it job quite well.
-
+Looking at these results I can conclude that dataset summerized with time segment size 8.9 seconds gives best result.
 
 </details>
 
@@ -490,28 +491,22 @@ Looking at these result i can conclude that my model does it job quite well.
 <details> <summary>Visualizing the outcome of a model</summary>
 
 ##### confusion matrix
- 
 I have created multiple confusion matrix of the model prediction on validation and test datasets. 
-With this i could see clearly where the model has difficulty. I have added example below where you can see clearly that 
-my model has allot of difficulty with light and heavy cycling.
+With this, I could see clearly where the model has difficulty. I have added an example below where you can see that 
+my model has al lot of difficulty with light and heavy cycling.
 
 Confusion matrix on test dataset with segment size of 7 seconds
 
 ![Confusion matrix on test dataset](evidence/images/confusion_matrix_test.png)
+src: [all_steps_activity recognition_final_version_split_cycling_7_seconds](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_7_seconds.pdf)
+
 
 #### plotting weekdata
 
-I have worked together with Ali on application to analyze weekdata. I have developed the part which actually plots weekdata analyzes results.
-This gives great insight on how the model performs on real data. Below you can find example on day worth of accelerometer data.
+I have worked together with Ali on application to analyze week data. I have developed the part which plots week data analyzes results.
+This gives great insight into how the model performs on real data. Below you can find an example on the day worth of accelerometer data.
 
 ![Plot on day data](evidence/images/plot_day%20of_week_data.png)
-
-
-
-
-
-
-
 
 </details>
 
@@ -536,10 +531,6 @@ This gives great insight on how the model performs on real data. Below you can f
 |13|Contributed to the presentation by adding content to dia 4.| [Week 13 presentation](evidence/presentations/week_13_external.pdf)|
 |14|Contributed to the presentation by adding content to dia 4 and I gave the presentation| [Week 14 presentation](evidence/presentations/week_14_internal.pdf)|
 |15|I didn't contribute anything | [Week 15 presentation](evidence/presentations/week_15_internal.pdf)|
-|16| | [Week 16 presentation](evidence/presentations/week_16_external.pdf)|
-|17|  | [Week 17 presentation](evidence/presentations/week_17_internal.pdf)|
-
-
 
 </details>
 
@@ -559,3 +550,10 @@ This gives great insight on how the model performs on real data. Below you can f
 |I have some fixed small issues |4| Subchapter activity recognition of chapter result|[4e iteration of subchapter acitivity recognition of chapter result](evidence/paper_chapters/result_activity_recognition_version_4.pdf)|
 
 </details>
+
+
+## my notebooks
+
+### Data preparation & machine learning models
+
+- 
