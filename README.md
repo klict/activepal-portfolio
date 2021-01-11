@@ -551,6 +551,8 @@ This gives great insight on how the model performs on real data. Below you can f
 |Processed feedback from my teammates|3| Subchapter activity recognition of chapter result|[3e iteration of subchapter acitivity recognition of chapter result](evidence/paper_chapters/result_activity_recognition_version_3.pdf)|
 |Wrote 1e iteration |1|subchapter study design of chapter data|[1e iteration of subchapter study design of chapter data](evidence/paper_chapters/data_study_design_version_1.pdf)|
 |Wrote 1e iteration |1|subchapter subjects of chapter data|[subchapter subjects of chapter data](evidence/paper_chapters/data_subjects_version_1.pdf)|
+|I have some fixed small issues |4| Subchapter activity recognition of chapter method|[4e iteration of subchapter acitivity recognition of chapter method](evidence/paper_chapters/method_activity_recognition_version_4.pdf)|
+|I have some fixed small issues |4| Subchapter activity recognition of chapter result|[4e iteration of subchapter acitivity recognition of chapter result](evidence/paper_chapters/result_activity_recognition_version_4.pdf)|
 
 </details>
 
