@@ -317,8 +317,8 @@ CBS provided us ActivPAL accelerometer dataset, Vytnus dataset and activity log 
 
 This dataset was used  for devloping both MET-regression en activity recognition models. In the case of Activity recognition models it was used to label accelerometer data.
 
-| column | datatype | description| 
-|--|--|--|
+| column | datatype | description | 
+|--------|----------|-------------|
 |activiteit| text | the name of an activity| 
 | start| text |The date and time when an activity was started  | 
 | stop| text|The date and time when an activity ended | 
@@ -328,7 +328,7 @@ This dataset was used  for devloping both MET-regression en activity recognition
 Vyntus is an device which analyzes  breathing of a person. The Vyntus dataset contains allot of features but we only used specifick features in the MET-regression models 
   
 | column | datatype | description|   
-|--|--|--|  
+|--------|----------|------------|  
 |vyn_time| timestamp| The date and time when breathing is analyzed |   
 | vyn_VO2 | int | rate of oxygen consumption | 
 
@@ -337,11 +337,12 @@ Vyntus is an device which analyzes  breathing of a person. The Vyntus dataset co
 This dataset was both used to develop both MET-regression and activity recognition models
 
 | column | datatype | description|   
-|--|--|--|  
+|--------|----------|------------|  
 |pal_time| timestamp| The date and time when accelerometer data is recorded |   
 | pal_accX| int | scaled value of gravitational acceleration of the X axis | 
 | pal_accY| int | scaled value of gravitational acceleration of the Y axis | 
 | pal_accZ| int | scaled value of gravitational acceleration of the Z axis | 
+
 </details>
 
 
@@ -354,8 +355,9 @@ The model I selected for recognizing activity was based on a paper and experimen
 So I looked at accuracy, precision and recall of random forest and decision tree model on the validation dataset. What I saw was that random forest model gave us the best results on all metrics as you can also see below:
 
 
-Validation results
-|Model | Accuracy | Precision | Recall |  
+** Validation results **
+
+| Model | Accuracy | Precision | Recall |  
 |-------|----------|-----------|--------|  
 |Decision tree |0.96|0.96|0.96|  
 |Random forest |0.97|0.98|0.98|  
@@ -390,8 +392,8 @@ src: [all_steps_activity recognition_final_version_split_cycling_time_segment]()
 
 Running this script for each time segment I quickly found the best time segment size and best amount of trees. In the table below you can find the results sorted on cross_val_accuracy:
 
-| Time segment size | number_of_trees | accuracy | precision | recall | cross_val_accuracy | cross_val_precision | cross_val_recall  |
-|--|--|--|--|--|--|--|--|
+| Time segment size | number_of_trees | accuracy | precision | recall | cross_val_accuracy | cross_val_precision | cross_val_recall |
+|-------------------|-----------------|----------|-----------|--------|--------------------|---------------------|------------------|
 | 7.0 | 203 | 0.952673| 0.953509 | 0.952673 | 0.827059| 0.843252 | 0.827059 |
 |12.1|93|0.968373|0.969834|0.968373|0.822249|0.836513|0.822249|
 |8.9|171|0.962306|0.963374|0.962306|0.817187|0.836683|0.817187|
@@ -419,8 +421,8 @@ x_train, x_valid, y_train, y_valid = train_test_split(x, y, test_size=0.2, rando
 ```
 Checking random forest model on the validation dataset. I found that it didn't underfit at all and it overfitted very little. I have added the results below:
 
-| Time segment size | number_of_trees | accuracy | precision | recall 
-|--|--|--|--|--|--|--|--|  
+| Time segment size | number_of_trees | accuracy | precision | recall| 
+|-------------------|-----------------|----------|-----------|-------|  
 | 7.0 | 203 | 0.95| 0.95 | 0.95 |
 |12.1|93|0.96|0.96|0.96| 
 |8.9|171|0.94|0.94|0.94|
@@ -428,7 +430,7 @@ Checking random forest model on the validation dataset. I found that it didn't u
 These results were quite high and got me a bit suspicious. So i used k-fold cross validation and got a bit more realistic results as you can see below.
 
 |Time segment size |number of trees | accuracy| precision | recall  |  
-|--|--|--|--|--|--|--|--|  
+|------------------|----------------|---------|-----------|---------|  
 | 7.0 | 203 | 0.83 (+/- 0.04)| 0.84 (+/- 0.04) |  0.83 (+/- 0.04) |  
 |12.1|93|0.82 (+/- 0.05)| 0.84 (+/- 0.04)|0.82 (+/- 0.05)|  
 |8.9|171|0.82 (+/- 0.04)| 0.84 (+/- 0.04)|0.82 (+/- 0.04)|
@@ -449,7 +451,7 @@ evidences:
 ** validation dataset **
 
 | Time segment size | number of trees | accuracy | precision | recall |
-|--|--|--|--|--|
+|-------------------|-----------------|----------|-----------|--------|
 | 7.0 | 203 | 0.95| 0.95 | 0.95 |
 |12.1|93|0.96|0.96|0.96| 
 |8.9|171|0.94|0.94|0.94|
@@ -457,7 +459,7 @@ evidences:
 ** Test dataset **
 
 | Time segment size | number of trees | accuracy | precision | recall |
-|--|--|--|--|--|
+|-------------------|-----------------|----------|-----------|--------|
 | 7.0 | 203 | 0.84| 0.84 | 0.84 |
 |12.1|93|0.85|0.85|0.85| 
 |8.9|171|0.86|0.86|0.86|
@@ -465,8 +467,8 @@ evidences:
 
 ** k-fold cross-validation(5 folds)  on train/validation dataset**
 
-|Time segment size |number of trees | accuracy| precision | recall  |  
-|--|--|--|--|--|
+| Time segment size | number of trees | accuracy | precision | recall  |  
+|-------------------|-----------------|----------|-----------|---------|
 | 7.0 | 203 | 0.83 (+/- 0.04)| 0.84 (+/- 0.04) |  0.83 (+/- 0.04) |  
 |12.1|93|0.82 (+/- 0.05)| 0.84 (+/- 0.04)|0.82 (+/- 0.05)|  
 |8.9|171|0.82 (+/- 0.04)| 0.84 (+/- 0.04)|0.82 (+/- 0.04)|
@@ -482,6 +484,8 @@ Looking at these result i can conclude that my model does it job quite well.
 
 
 </details>
+
+
 
 <details> <summary>Visualizing the outcome of a model</summary>
 
