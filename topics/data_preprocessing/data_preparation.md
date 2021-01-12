@@ -30,17 +30,13 @@ def calculate_peak_distance(activpal_segment, key):
 
 ````
 
-src: [all_steps_activity_recognition.ipynb](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
+src: [all_steps_activity_recognition.pdf](../../evidence/python_notebook/all_steps_activity_recognition.pdf)
 
 # time segment
 The time segment is about how much data we need to summarize with features.
  In the development of the model, I saw that time segment choice has quite of influence on the model prediction ability.
 
-So I created a script that helps with selecting a time segment:
-
-
-
-evidence: [all_steps_activity recognition_final_version_split_cycling_time_segment.ipynb](../../evidence/python_notebook/all_steps_activity recognition_final_version_split_cycling_time_segment.ipynb)
+So I created a notebook that helps with selecting a time segment: [all_steps_activity_recognition_final_version_split_cycling_time_segment.pdf](../../evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_time_segment.pdf)
 
 
 ### balancing
@@ -64,4 +60,4 @@ def balance_dataset_by_activity(dataset):
     return unbalanced_dataset
 ````
 
-src: [all_steps_activity_recognition.ipynb](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
+src: [all_steps_activity_recognition.pdf](../../evidence/python_notebook/all_steps_activity_recognition.pdf)
