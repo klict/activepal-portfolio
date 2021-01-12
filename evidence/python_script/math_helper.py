@@ -17,10 +17,17 @@ def to_mag_acceleration(accX, accY, accZ):
 def calculate_met(vo2, kg):
     return vo2 / (3.5 * kg)
 
+def calculate_bmi(weight, length_cm):
+    return weight / ((length_cm / 100) ** 2)
+
 #Adnan akbas 08/10/2020
 def convert_value_to_g(value):
     return (value - 127) / 63
 
+#Adnan akbas + Coling Werkhoven 27/10/2020
+def convert_g_to_scaled_value(g):
+    return (g * 63) + 127
+
 #Ali Safdari 08/10/2020
 def convert_value_to_acceleration(val):
-    return ((val - 127) / 63) * 9.81
+    return ((val - 127) / 63) * 9.81    

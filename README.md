@@ -19,6 +19,7 @@ To answer this question we have created following research questions:
 	 - *What machine learning model can best be used to measure the intensity for each activity?*
  3. **How can Machine Learning be used to determine whether people did their 150 minutes of moderate activity in ActivPal accelerometer data of an entire week?**
 	 -  *How can Machine Learning be used to recognize the activities, performed in the lab situation, in the ActivPal accelerometer data?*
+src: [research_plan.pdf](evidence/documents/research_plan.pdf)
 
 
 
@@ -192,6 +193,9 @@ Each morning I would join the stand-up with my other team members and explain wh
 I have found following literature:
 - [Random forest classifier by Tin Kam Ho](evidence/documents/random_forest_classifier_tin_kam_ho.pdf)
 - [An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band](evidence/documents/activity_recognition_framework_deploying_the_random_forest_classififier.pdf)
+
+There is also paper that i didn't find but I made notes about it:
+    - [paper_notes.pdf](../../evidence/documents/paper_notes.pdf)
 
 </details>
 
@@ -397,7 +401,7 @@ So I looked at accuracy, precision and recall of random forest and decision tree
 |Decision tree |0.96|0.96|0.96|  
 |Random forest |0.97|0.98|0.98|  
   
-Evidence: [all_steps_activity_recognition.ipyn](../../evidence/python_notebook/all_steps_activity_recognition.ipynb)
+Evidence: [all_steps_activity_recognition.pdf](evidence/python_notebook/all_steps_activity_recognition.pdf)
 I do need to tell you that these results were from a validation/training dataset which I balanced it.
 
 
@@ -489,7 +493,8 @@ evidences:
 |12.1|93|0.96|0.96|0.96| 
 |8.9|171|0.94|0.94|0.94|
 
-**Test dataset**
+
+**Test dataset(3 respondents)**
 
 | Time segment size | number of trees | accuracy | precision | recall |
 |-------------------|-----------------|----------|-----------|--------|
@@ -583,13 +588,41 @@ This gives great insight into how the model performs on real data. Below you can
 </details>
 
 
-## my notebooks
+## all notebooks/code  I worked on
 
-### Data preparation & machine learning models
 
+### My notebooks
 Note: Matthew wrote following lines in each notebook:
+
 ````python
 stdev_x =  statistics.stdev(activpal_segment['x']) if len(activpal_segment['x']) >= 2 else 0
 mean_x = activpal_segment['x'].mean()
 ````
-- 
+
+- [activities_categories.pdf](evidence/python_notebook/activities_categories.pdf)
+- [activity_recognition_demo.pdf](evidence/python_notebook/activity_recognition_demo.pdf)
+- [activity_visualization.pdf](evidence/python_notebook/activity_visualization.pdf)
+- [activpal_g_to_acceleration.pdf](evidence/python_notebook/activpal_g_to_acceleration.pdf)
+- [all_steps_activity_recognition_final_version.pdf](evidence/python_notebook/all_steps_activity_recognition_final_version.pdf)
+- [all_steps_activity_recognition_v2_analysis.pdf](evidence/python_notebook/all_steps_activity_recognition_v2_analysis.pdf)
+- [all_steps_activity_recognition_final_version_split_cycling_7_seconds.pdf](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_7_seconds.pdf)
+- [all_steps_activity_recognition_final_version_split_cycling_8_9_seconds.pdf](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_8_9_seconds.pdf)
+- [all_steps_activity_recognition_final_version_split_cycling_12_1_seconds.pdf](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_12_1_seconds.pdf)
+- [all_steps_activity_recognition_final_version_split_cycling_time_segment.pdf](evidence/python_notebook/all_steps_activity_recognition_final_version_split_cycling_time_segment.pdf)
+- [all_steps_activity_recognition_logistic_regression.pdf](evidence/python_notebook/all_steps_activity_recognition_logistic_regression.pdf)
+- [all_steps_activity_recognition_v3_analysis_normalized_data.pdf](evidence/python_notebook/all_steps_activity_recognition_v3_analysis_normalized_data.pdf)
+- [diceface_corrected_data_analysis.pdf](evidence/python_notebook/diceface_corrected_data_analysis.pdf)
+- [extract_features_from_all_respodents.pdf](evidence/python_notebook/extract_features_from_all_respodents.pdf)
+- [feature_selection.pdf](evidence/python_notebook/feature_selection.pdf)
+- [intensity_classification_model.pdf](evidence/python_notebook/intensity_classification_model.pdf)
+- [intensity_classification_model_backup.pdf](evidence/python_notebook/intensity_classification_model_backup.pdf)
+- [display_x_y_z.py](evidence/python_script/display_x_y_z.py)
+- [animate_scatterplot_xyz.py](evidence/python_script/animate_scatterplot_xyz.py)
+
+
+### Contribution to group code
+- [all_steps_activity_recognition.pdf](evidence/python_notebook/all_steps_activity_recognition.pdf)
+- [feature_selection.pdf](evidence/python_notebook/feature_selection.pdf)
+- [normalize_diceface_values_v3.pdf](evidence/python_notebook/normalize_diceface_values_v3.pdf)
+- [math_helper.py](evidence/python_script/math_helper.py)
+
