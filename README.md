@@ -619,7 +619,6 @@ mean_x = activpal_segment['x'].mean()
 - [all_steps_activity_recognition_v3_analysis_normalized_data.pdf](evidence/python_notebook/all_steps_activity_recognition_v3_analysis_normalized_data.pdf)
 - [diceface_corrected_data_analysis.pdf](evidence/python_notebook/diceface_corrected_data_analysis.pdf)
 - [extract_features_from_all_respodents.pdf](evidence/python_notebook/extract_features_from_all_respodents.pdf)
-- [feature_selection.pdf](evidence/python_notebook/feature_selection.pdf)
 - [intensity_classification_model.pdf](evidence/python_notebook/intensity_classification_model.pdf)
 - [intensity_classification_model_backup.pdf](evidence/python_notebook/intensity_classification_model_backup.pdf)
 - [display_x_y_z.py](evidence/python_script/display_x_y_z.py)
@@ -628,7 +627,6 @@ mean_x = activpal_segment['x'].mean()
 
 ### Contribution to group code
 - [all_steps_activity_recognition.pdf](evidence/python_notebook/all_steps_activity_recognition.pdf)
-- [feature_selection.pdf](evidence/python_notebook/feature_selection.pdf)
 - [normalize_diceface_values_v3.pdf](evidence/python_notebook/normalize_diceface_values_v3.pdf)
 - [math_helper.py](evidence/python_script/math_helper.py)
 
