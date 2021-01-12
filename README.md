@@ -33,12 +33,15 @@ src: [research_plan.pdf](evidence/documents/research_plan.pdf)
 <details> <summary>Reflection on own contribution to the project.</summary>
 
 **Situation**
+
 As a Software engineering student, I have quite a bit of experience with programming but almost none with machine learning models, visualization and python. I knew that I had to learn al lot if I want to contribute to my project. Which wasn't a problem I was motivated from the moment we started with with the project. For me, this was a great opportunity to work with people from different study fields. I wanted to work on my communication skills and I wanted to take more initiative. 
 
 **Task** 
+
 So for me, the task ahead was to communicate clearly with my team. I wanted to keep my team up to date with my progress so everybody knew what I was doing. Next, I needed to take initiatives on stuff that needed to be worked on.
 
 **Action**
+
 At the stand-ups, I always told my team what I did yesterday, what I was going to do today and if I was stuck with something. I was also actively talking in meeting to communicate clearly what I thought meeting subject.
 
 Throughout the project, I worked on activity recognition model. I mostly did this alone with allot of research on the subject. I researched what needs to be done with data, what kind of model I could use and how to configure them. 
@@ -46,9 +49,11 @@ Throughout the project, I worked on activity recognition model. I mostly did thi
 Next to that I also helped my team members on their issues. It could be understanding a formula from a paper, programming issue or not knowing what to do. From the beginning, I showed my teammates that they always can ask me for help.
 
 **result**
+
 I have successfully created an activity recognition model. It can recognize activities with 84% accuracy. Next to that, I saw that with taking initiatives in meeting what I found important got discussed. I also saw that my teammates asked me to a lot of questions on their issues which I always loved to help.
 
 **reflection**
+
 I am happy with my contributions. I have created an activity recognition model which was needed to answer the main research questions. I have created the script that processed accelerometer data. I had helped my teammates when they had an issue, so they could work further. I took initiatives to bring up tasks that we need to be done. For example I brought most of the time up that we need work on the presentation. I also contributed to the research paper by writing 4 important chapters.
 
 </details>
@@ -56,22 +61,28 @@ I am happy with my contributions. I have created an activity recognition model w
 <details> <summary>Reflection on own learning objectives.</summary>
 
 **Situation**
+
 Reflection on own learning objectives.
 I have a lot of experience with programming but none with data science. So this Applied Data Science minor was a new world for me.
 I knew from the beginning that I going to learn a lot.
 
 **Task**
+
 I worked mainly on the programming side of the project. To be more specific I programmed everything related to activity recognition. This included data pre-processing, selecting models and configuring it. I also actively helped my teammates with programming issues.
 
 **Action**
+
 I started with the literature study, but I wasn't successful in finding useful papers. After this, I tried to explore our data to see what kind of data we got from CBS and what we could do with it. From this point on, I mainly worked on data pre-processing, selecting a model, configuring and training it. 
 At the same time, I also followed Datacamp courses. I wanted to refresh my python programming skills and learn more about it.
 
 **result**
+
 Thanks to this minor I have learned a lot. I have learned how to pre-process data and what to look out for. How I can recognize activity from accelerometer data with very simple features. What kind of models exist and what I should for classification tasks. What hyperparameters are and how I can tune it. How I can visualize data in a very clear way and how to do this with python. 
 
 At the end of the minor, I can say that I know how to develop an effective classification model.
+
 **reflection**
+
 When I look back to what I learned I am quite happy. I have learned so much that I am scared to forget some stuff. I have learned how to create a model which was quite interesting. I had no idea that there problems like overfitting and underfitting. Another thing I didn't know that a random forest model has a lot of hyper parameters. I have also learned that most important part Is data preprocessing. I always thought that the model would be import part of data science since it predicts something. But thanks to this minor and my work on the activity classifcation I now know that the selecting and configuring a model is the small part of the whole process. 
 
 Thanks to this minor I now know what I need to do if I want to develop a model and it's awesome. I hope I can use everything I learned in the future.
@@ -82,19 +93,24 @@ Thanks to this minor I now know what I need to do if I want to develop a model a
 <details> <summary>Evaluation on the group project as a whole.</summary>
 
 **Situation**
+
 At the beginning of this project, we started with 6 group member. 4 teammates are from Software Engineering, 1 from Bim and another student from Sport. But in the end, we have left 5 group members because the student from sport decided to stop.
 
 **Task**
+
 We as a group decided that we would work with Scrum but would implement it in our way. That meant we would not follow all of the Scrum rules. Our project group was based on trust, this is also the reason why we didn't sign any contract.
 
 **Action**
+
 At the beginning of the project, we decided that we would split our group in 2 of 3 persons. One group would focus on MET-value prediction and another on data exploration. We saw that it did work but it had issues and slowly let it go. So from that point on we took a different approach. We first created tasks after discussing what we would want to work on and what we want to finish. Next we each person would tell what they want to work on and we assign them to the task. I liked this approach because there was freedom to work on stuff you wanted and it forced you to take initiative to take a task on.
 Teammates would communicate with each other while working on tasks and ask questions if they are stuck. We also have a group chat in WhatsApp where we would talk with each other on different subjects.
 
 **result**
+
 I enjoyed how we took on the project. I saw that everybody did their best and were more motivated to work on the tasks they took on themselves. The WhatsApp group chat also helped to keep the group a bit more together and work closely. I also saw that by implementing the Scrum process in our way that everybody tried to be at stand-ups, retrospective and other events.
 
 **reflection**
+
 Thanks to COVID-19 we had to work digitally. Unfortunately, this meant that we didn't see each other in real life which makes communication sometimes difficult. Still, I enjoyed my time with this group. I loved how we talked with each other, that we were open and not scared to throw our ideas in. I know that I am sometimes hard-headed but I am also happy that my teammates would be open with me and give their honest feedback. 
 
 There also of course some downsides. Unfortunately, one teammate left us which I find sad. I hoped he would stay but I do understand his decision. I also felt sometimes that certain teammates wouldn't contribute as much as the rest which I saw becoming an issue. We did bring it up multiple times with each other and did I see some improvement from him.  
@@ -418,7 +434,7 @@ I do need to tell you that these results were from a validation/training dataset
 There is allot of hyperparameters to configure in random forest model.  The paper  [An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band](evidence/documents/activity_recognition_framework_deploying_the_random_forest_classififier.pdf)
  also uses the random forest model to recognize activities from acceleration data. The hyper parameters configuration in that paper was the same as default configuration used in RandomForestClassfier from sckit but only**n_estimators**parameter was modified. I didn't find a reason to modify the rest of the hyper parameters.
 
-So to configure the**n_estimators**which means the number of trees I created a script. It automatically chooses the number of trees that gives the highest amount of accuracy on the validation dataset.
+So to configure the **n_estimators** which means the number of trees I created a script. It automatically chooses the number of trees that gives the highest amount of accuracy on the validation dataset.
 
 ```python
     n_estimator_numbers = range(10,200,1)
