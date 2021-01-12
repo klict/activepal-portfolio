@@ -24,13 +24,12 @@ src: [research_plan.pdf](evidence/documents/research_plan.pdf)
 
 
 ### Team members
-- Ali
+- [Ali](https://github.com/ASafdari/activPAL-Portfolio)
 - [Colin](https://github.com/colinrw/ActivPal-Portfolio)
 - Mark
 - Matthew
 
 ## Reflection
-
 <details> <summary>Reflection on own contribution to the project.</summary>
 
 **Situation**
@@ -195,7 +194,7 @@ I have found following literature:
 - [An Activity Recognition Framework Deploying the Random Forest Classifier and A Single Optical Heart Rate Monitoring and Triaxial Accelerometer Wrist-Band](evidence/documents/activity_recognition_framework_deploying_the_random_forest_classififier.pdf)
 
 There is also paper that i didn't find but I made notes about it:
-    - [paper_notes.pdf](../../evidence/documents/paper_notes.pdf)
+    - [paper_notes.pdf](evidence/documents/paper_notes.pdf)
 
 </details>
 
@@ -341,6 +340,11 @@ To get an idea what kind of features we could use I did some research into our d
 I made a line plot for each activity for different respondents.  The image below shows clearly that each activity has a unique pattern. So with this information, I concluded that we could use standard deviation and mean of each axis as features. 
 
 ![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
+
+Well I made more plots on data from smaller time range to see much clearer what kind of patterns there are. For example below I have added image where I compare walking vs running:
+![Image that shows plots of running and walking](evidence/images/running_vs_walking.png)
+
+
 [Src of the image](evidence/python_notebook/activity_visualization.pdf)
 </details>
 
