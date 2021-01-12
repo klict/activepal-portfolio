@@ -210,6 +210,10 @@ certain behaviour for an activity. The image below does show it quite clearly th
 ![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
 [Src of the image](evidence/python_notebook/activity_visualization.pdf)
 
+Well I made more plots on data from smaller time range to see much clearer what kind of patterns there are. For example below I have added image where I compare walking vs running:
+
+![Image that shows plots of running and walking](evidence/images/running_vs_walking.png)
+
 [More Examples](topics/data_preprocessing/data_exploration.md)
 
 </details>
@@ -340,8 +344,6 @@ To get an idea what kind of features we could use I did some research into our d
 I made a line plot for each activity for different respondents.  The image below shows clearly that each activity has a unique pattern. So with this information, I concluded that we could use standard deviation and mean of each axis as features. 
 
 ![Image that shows plots which show in turn patterns of each activity](evidence/images/combination.png)
-
-Well I made more plots on data from smaller time range to see much clearer what kind of patterns there are. For example below I have added image where I compare walking vs running:
 ![Image that shows plots of running and walking](evidence/images/running_vs_walking.png)
 
 
