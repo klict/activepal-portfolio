@@ -32,10 +32,6 @@ To answer this question we have created following research questions:
 
 <details> <summary>Reflection on own contribution to the project.</summary>
 
-STARR
-Reflection on own contribution to the project.
-
-Situation
 As a Software engineering student, I have quite a bit of experience with programming but almost none with machine learning models, visualization and python. I knew that I had to learn al lot if I want to contribute to my project. Which wasn't a problem I was motivated from the moment we started with with the project. For me, this was a great opportunity to work with people from different study fields. I wanted to work on my communication skills and I wanted to take more initiative. 
  
 So for me, the task ahead was to communicate clearly with my team. I wanted to keep my team up to date with my progress so everybody knew what I was doing. Next, I needed to take initiatives on stuff that needed to be worked on.
@@ -48,8 +44,7 @@ Next to that I also helped my team members on their issues. It could be understa
 
 I have successfully created an activity recognition model. It can recognize activities with 84% accuracy. Next to that, I saw that with taking initiatives in meeting what I found important got discussed. I also saw that my teammates asked me to a lot of questions on their issues which I always loved to help.
 
-
-I am happy with my contributions. I have created an activity recognition model which was needed to answer the main research questions. I have created the script that processed accelerometer data. I had helped my teammates when they had an issue, so they could work further I took initiatives to bring up tasks that we need to be done. I also contributed to the research paper by writing 4 important chapters.
+I am happy with my contributions. I have created an activity recognition model which was needed to answer the main research questions. I have created the script that processed accelerometer data. I had helped my teammates when they had an issue, so they could work further. I took initiatives to bring up tasks that we need to be done. For example I brought most of the time up that we need work on the presentation. I also contributed to the research paper by writing 4 important chapters.
 
 
 </details>
