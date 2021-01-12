@@ -177,7 +177,8 @@ Each task can be modified, removed or created while the sprint was going on but 
 At 9:30 am from Monday to Friday we were holding a stand-up. At the stand-up we discussed what we did a day earlier, going to today and if we are stuck with something.
 We also held retrospectives at the end of each sprint, where we discussed our progress and teamwork.
 
-## My role in scrum
+**My role in scrum**
+
 I didn't have a specific role in the scrum process other than a developer but I did actively participate in each phase of the scrum process. At the sprint planning, I have actively created the task after discussing with the team. At the same time, I would assign a task to myself unless other team members would want them. In some cases, we would assign multiple members to a task.  Jira inherently doesn't support assigning multiple members to a task. That's why we would write the names of the assigned members to the tasks.
 Each morning I would join the stand-up with my other team members and explain what I did yesterday, what I am gonna do today and if I need help.  At the end of each sprint, I would join retrospective and give my input. I would say what we did well, what didn't go well and what I wish next sprint would get better.
 
@@ -225,7 +226,6 @@ Our dataset was provided by CBS in cleaned state, so there was not much cleaning
 </details>
 
 <details> <summary>Data preparation</summary>
-
 I have developed almost all of the data preparation code for Activity Recognition model. First I have developed a 
 function that extracts features from accelerometer dataset of a respondent. In this function, we are creating new features which summarize a certain time range.
 I specifically created the features standard deviation and mean of Y and Z-axis. Mathew worked on the features mean and standard deviation of the X-axis. I just copied the Mathew code and modified for my use. 
