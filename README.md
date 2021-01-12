@@ -32,15 +32,25 @@ To answer this question we have created following research questions:
 
 <details> <summary>Reflection on own contribution to the project.</summary>
 
-**situation**
+STARR
+Reflection on own contribution to the project.
 
-**task**
+Situation
+As a Software engineering student, I have quite a bit of experience with programming but almost none with machine learning models, visualization and python. I knew that I had to learn al lot if I want to contribute to my project. Which wasn't a problem I was motivated from the moment we started with with the project. For me, this was a great opportunity to work with people from different study fields. I wanted to work on my communication skills and I wanted to take more initiative. 
+ 
+So for me, the task ahead was to communicate clearly with my team. I wanted to keep my team up to date with my progress so everybody knew what I was doing. Next, I needed to take initiatives on stuff that needed to be worked on.
 
-**action**
+At the stand-ups, I always told my team what I did yesterday, what I was going to do today and if I was stuck with something. I was also actively talking in meeting to communicate clearly what I thought meeting subject.
 
-**result**
+Throughout the project, I worked on activity recognition model. I mostly did this alone with allot of research on the subject. I researched what needs to be done with data, what kind of model I could use and how to configure them. 
 
-**reflection**
+Next to that I also helped my team members on their issues. It could be understanding a formula from a paper, programming issue or not knowing what to do. From the beginning, I showed my teammates that they always can ask me for help.
+
+I have successfully created an activity recognition model. It can recognize activities with 84% accuracy. Next to that, I saw that with taking initiatives in meeting what I found important got discussed. I also saw that my teammates asked me to a lot of questions on their issues which I always loved to help.
+
+
+I am happy with my contributions. I have created an activity recognition model which was needed to answer the main research questions. I have created the script that processed accelerometer data. I had helped my teammates when they had an issue, so they could work further I took initiatives to bring up tasks that we need to be done. I also contributed to the research paper by writing 4 important chapters.
+
 
 </details>
 
@@ -538,7 +548,7 @@ This gives great insight into how the model performs on real data. Below you can
 
 |Contribution|Iteration|Chapter|Link|
 |------------|---------|-------|----|
-|Wrote 1e iteration together with Ali Safdari. I tried to write it alone but I couldn't put the infromation about the method in the right way. Ali wrote the text while I told him what needs to be in the paper.|1| Subchapter activity recognition of chapter method|[1e iteration of subchapter acitivity recognition chapter method](evidence/paper_chapters/method_activity_recognition_version_1.pdf)|
+|Wrote the first iteration together with Ali Safdari. Couldn't put the information in the paper in the right words. Ali helped me this.|1| Subchapter activity recognition of chapter method|[1e iteration of subchapter acitivity recognition chapter method](evidence/paper_chapters/method_activity_recognition_version_1.pdf)|
 |Processed feedback from my teammates |2| Subchapter activity recognition of chapter method|[2e iteration of subchapter acitivity recognition of chapter method](evidence/paper_chapters/method_activity_recognition_version_2.pdf)|
 |Processed feedback from my teammates |3| Subchapter activity recognition of chapter method|[3e iteration of subchapter acitivity recognition of chapter method](evidence/paper_chapters/method_activity_recognition_version_3.pdf)|
 |Wrote 1e iteration |1| Subchapter activity recognition of chapter result|[1e iteration of subchapter acitivity recognition of chapter result](evidence/paper_chapters/result_activity_recognition_version_1.pdf)|
@@ -556,4 +566,9 @@ This gives great insight into how the model performs on real data. Below you can
 
 ### Data preparation & machine learning models
 
+Note: Matthew wrote following lines in each notebook:
+````python
+stdev_x =  statistics.stdev(activpal_segment['x']) if len(activpal_segment['x']) >= 2 else 0
+mean_x = activpal_segment['x'].mean()
+````
 - 
